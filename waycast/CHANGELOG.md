@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/doublewordai/waycast/compare/v0.3.0...v0.4.0) (2025-10-17)
+
+
+### Features
+
+* Add the ability for headers to be used to set user groups. Useful for group mapping from downstream proxies ([#27](https://github.com/doublewordai/waycast/issues/27)) ([16362e9](https://github.com/doublewordai/waycast/commit/16362e9a61228f80e18afad620e2cc0cc9589963))
+
 ## [0.3.0](https://github.com/doublewordai/waycast/compare/v0.2.0...v0.3.0) (2025-10-17)
 
 
