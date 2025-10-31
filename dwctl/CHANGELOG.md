@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/doublewordai/control-layer/compare/v0.5.1...v0.6.0) (2025-10-31)
+
+
+### Features
+
+* support Cortex AI and SPCS, and also add the ability to manually configure model endpoints. Also, overhaul design of endpoint creation flow ([#51](https://github.com/doublewordai/control-layer/issues/51)) ([5419e31](https://github.com/doublewordai/control-layer/commit/5419e310fd65542d58be76a09ffc130ea8a3f57c))
+
 ## [0.5.1](https://github.com/doublewordai/control-layer/compare/v0.5.0...v0.5.1) (2025-10-30)
 
 
