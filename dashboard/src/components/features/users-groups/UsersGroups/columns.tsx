@@ -7,6 +7,7 @@ import {
   Edit2,
   Users,
   Trash2,
+  Receipt,
 } from "lucide-react";
 import { Button } from "../../../ui/button";
 import { Checkbox } from "../../../ui/checkbox";
@@ -25,7 +26,9 @@ interface UserColumnActions {
   onEdit: (user: DisplayUser) => void;
   onDelete: (user: DisplayUser) => void;
   onManageGroups: (user: DisplayUser) => void;
+  onViewTransactions: (user: DisplayUser) => void;
   groups: DisplayGroup[];
+  showTransactions?: boolean;
 }
 
 // Predefined color classes that Tailwind will include
@@ -187,6 +190,12 @@ export const createUserColumns = (
               <Users className="mr-2 h-4 w-4" />
               Manage Groups
             </DropdownMenuItem>
+            {actions.showTransactions && (
+              <DropdownMenuItem onClick={() => actions.onViewTransactions(user)}>
+                <Receipt className="mr-2 h-4 w-4" />
+                View Transactions
+              </DropdownMenuItem>
+            )}
             <DropdownMenuSeparator />
             <DropdownMenuItem
               onClick={() => actions.onDelete(user)}
